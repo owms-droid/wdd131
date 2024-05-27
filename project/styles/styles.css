@@ -1,0 +1,148 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: 'Mukta', sans-serif;
+}
+
+#navbar {
+  background: #231287;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 28.75em) {
+  #navbar {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.nav-list a:hover {
+  background: #130220;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url(https://cdn.glitch.global/9f5acb9f-8fc7-42f2-90f3-d5fdaf8fa6e2/fondo%20portfolio.jpg?v=1648568525398);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #130220;
+  font-weight: 700;
+}
+
+#welcome-section > p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+}
+
+#about {
+  margin: 3rem;
+  text-align: justify;
+}
+
+h2, #footer {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+.project-cards {
+  text-align: center;
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 1280px;
+  margin-bottom: 3rem;
+  margin-left: -1rem;
+}
+
+#projects {
+  color: #fff;
+  background: #130220;
+  padding: 2rem 2rem;
+}
+
+.project-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@supports(object-fit: cover){
+    .project-box img{
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.project-box {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(237, 242, 251, 0.2), 0 6px 20px 0 rgba(237, 242, 251, 0.19);
+}
+
+#contact {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #060798;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+
+.social-details {
+  padding: 1rem;
+  color: white;
+}
